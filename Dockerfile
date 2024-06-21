@@ -1,8 +1,18 @@
-# Use an official nginx image as a base
-FROM nginx:alpine
+# Use an official node image as a base
+FROM node:14
 
-# Copy the content of the current directory to /usr/share/nginx/html
-COPY . /usr/share/nginx/html
+# Set the working directory
+WORKDIR /app
 
-# Expose port 80
-EXPOSE 80
+# Copy the package.json and install dependencies
+COPY package.json /app
+RUN npm install
+
+# Copy the rest of the application
+COPY . /app
+
+# Expose port 3000
+EXPOSE 3000
+
+# Start the server
+CMD ["npm", "start"]

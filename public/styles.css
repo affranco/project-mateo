@@ -164,3 +164,18 @@ form button:hover {
 #kontakt form label, #kontakt form input, #kontakt form textarea, #kontakt form button {
     color: #fff;
 }
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #B08A00;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #D4A200;
+}
