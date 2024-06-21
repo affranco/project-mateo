@@ -4,3 +4,5 @@ Es necesario tener conceptos docker, diseño basico de paginas web y manejo de e
 
 Algun daño ocasionado con este codigo no soy responsable de los mismos.
 
+Let de data esta incluida en el home. Note Mateo temas legales
+
