@@ -60,11 +60,51 @@ section.active {
     display: block;
 }
 
+#zeitplan {
+    background: url('images/swimming-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.streckenplaene-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.streckenplaene-content .map {
+    max-width: 50%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.streckenplaene-content .streckenplaene-details {
+    max-width: 50%;
+    padding-left: 20px;
+}
+
+.streckenplaene-details h3 {
+    color: #D4A200;
+}
+
+.streckenplaene-details .icons {
+    margin-top: 20px;
+}
+
+.streckenplaene-details .icons .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
 h1, h2 {
     font-family: 'Helvetica Neue Bold', Arial, sans-serif;
 }
 
-button#startButton {
+h3 {
+    color: #D4A200;
+}
+
+button#startButton, button#earlyBirdButton, button#moreInfoButton {
     background: #B08A00;
     color: #fff;
     border: none;
@@ -74,7 +114,7 @@ button#startButton {
     border-radius: 10px;
 }
 
-button#startButton:hover {
+button#startButton:hover, button#earlyBirdButton:hover, button#moreInfoButton:hover {
     background: #D4A200;
 }
 
@@ -95,4 +135,32 @@ form {
 
 form label, form input, form textarea, form button {
     margin: 0.5rem 0;
+}
+
+form input[type="checkbox"] {
+    margin: 0.5rem 0 1rem 0;
+}
+
+form button {
+    background: #B08A00;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background: #D4A200;
+}
+
+#kontakt {
+    background: #000;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#kontakt form label, #kontakt form input, #kontakt form textarea, #kontakt form button {
+    color: #fff;
 }

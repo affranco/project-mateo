@@ -21,45 +21,86 @@
             <li><a href="#mehr-info">Mehr Info</a></li>
             <li><a href="#sportarten">Sportarten</a></li>
             <li><a href="#anmeldung">Anmeldung</a></li>
+            <li><a href="#wettkampfordnung">Wettkampfordnung</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
         </ul>
     </nav>
-    <section id="start">
+    <section id="start" class="active">
         <h2>ES IST WEIDER SOWEIT!</h2>
         <p>3. Waldtriathlon in Trainingen<br>Sonntag, 15. September 2024</p>
+        <p>Der Zuspruch in den vergangenen Jahren war so groß: Deshalb soll der Waldtriathlon in unserem Ort nun ein regelmäßiges Sportereignis werden. Im SV Trainingen haben wir eine eigene Orga-Einheit gebildet. Und wir setzen in der heißen Phase vor und im Wettbewerb wieder auf viele ehrenamtliche Helferinnen und Helfer. Außerdem freuen wir uns über weitere Sponsoren, die bei der Finanzierung des Events helfen. Ein großer Dank geht an die Stadtwerke Trainingen, die auch dieses Jahr unsere Hauptförderer sind.</p>
         <button id="startButton">START</button>
     </section>
     <section id="streckenplaene">
-        <h2>Streckpläne</h2>
-        <p>
-            <strong>Radstrecke</strong><br>
-            Verpflegungspunkte: VP 1 bei Kilometer 3,5; VP 2 bei Kilometer 7,5<br>
-            <strong>Laufstrecke</strong><br>
-            Verpflegungspunkte: VP 1 bei Kilometer 1,5; VP 3 bei Kilometer 2,5<br>
-            <strong>Schwimmen</strong><br>
-            Alle Wettkämpfe Schwimmen – 50 m-Bahn
-        </p>
+        <h2>STRECKENPLÄNE</h2>
+        <div class="streckenplaene-content">
+            <img src="images/streckenplane-map.png" alt="Streckenpläne Map" class="map">
+            <div class="streckenplaene-details">
+                <h3>Radstrecke</h3>
+                <p>
+                    VP 1 bei Kilometer 3,5<br>
+                    VP 2 bei Kilometer 7,5<br>
+                    VP 1 bei Kilometer 1,5
+                </p>
+                <h3>Laufstrecke</h3>
+                <p>
+                    VP 3 bei Kilometer 2,5<br>
+                    Verpflegungspunkte bei Kindertriathlon + Familienstaffel
+                </p>
+                <h3>Schwimmen</h3>
+                <p>Alle Wettkämpfe Schwimmen – 50 m-Bahn</p>
+                <div class="icons">
+                    <img src="images/icon-start.svg" alt="Start Icon" class="icon">
+                    <img src="images/icon-finish.svg" alt="Ziel Icon" class="icon">
+                    <img src="images/icon-food.svg" alt="Verpflegungspunkt Icon" class="icon">
+                    <img src="images/icon-swimming.svg" alt="Schwimmen Icon" class="icon">
+                    <img src="images/icon-cycling.svg" alt="Radstrecke Icon" class="icon">
+                    <img src="images/icon-running.svg" alt="Laufstrecke Icon" class="icon">
+                </div>
+            </div>
+        </div>
     </section>
     <section id="ausschreibung">
-        <h2>Ausschreibung</h2>
+        <h2>AUSSCHREIBUNG</h2>
+        <h3>TERMIN</h3>
         <p>
-            <strong>Termin:</strong> Sonntag, 15. September 2024<br>
+            <strong>Sonntag, 15. September 2024</strong><br>
+            10 Uhr Auftakt mit Musik, Marktplatz<br>
+            anschl. Wettkämpfe (zeitlich gestaffelt), Treffpunkt: Waldbad<br>
+            18 Uhr Siegerehrung mit Musik, Bühne vor dem Waldbad
+        </p>
+        <p>
             <strong>Wettkämpfe:</strong><br>
-            A. Volkstriathlon klassisch (für Erwachsene): 600 m Schwimmen, 20 km Radfahren, 6 km Laufen, Startgeld: 35 Euro (*)<br>
-            B. Schnuppertriathlon (für Jugendliche 12–18 Jahre): 300 m Schwimmen, 10 km Radfahren, 3 km Laufen, Startgeld: 20 Euro (*)<br>
-            C. Kindertriathlon (ab 9 Jahren): 100 m Schwimmen, 2,5 km Radfahren, 500 m Laufen, Startgeld: Spende<br>
-            D. Familienstaffel (3 Personen, davon mindestens 1 Erwachsener und 1 Kind): 150 m Schwimmen, 5 km Radfahren, 1,5 km Laufen, Startgeld: 20 Euro (*)<br>
+            A Volkstriathlon klassisch (für Erwachsene): 600 m Schwimmen, 20 km Radfahren, 6 km Laufen, Startgeld: 35 Euro (*)<br>
+            B Schnuppertriathlon (für Jugendliche 12–18 Jahre): 300 m Schwimmen, 10 km Radfahren, 3 km Laufen, Startgeld: 20 Euro (*)<br>
+            C Kindertriathlon (ab 9 Jahren): 100 m Schwimmen, 2,5 km Radfahren, 500 m Laufen, Startgeld: Spende<br>
+            D Familienstaffel (3 Personen, davon mindestens 1 Erwachsener und 1 Kind): 150 m Schwimmen, 5 km Radfahren, 1,5 km Laufen, Startgeld: 20 Euro (*)<br>
             (*) Jetzt mit 10 Prozent Frühbucherrabatt
         </p>
+        <p>
+            Rahmenprogramm: Aufwärm-Aerobic (für alle Interessierten), Musik, Getränke- und Imbiss-Stationen, Verkauf von bedruckten T-Shirts, Stickern und Kaffeebechern
+        </p>
+        <button id="earlyBirdButton">Jetzt Frühbucherrabatt</button>
     </section>
     <section id="zeitplan">
-        <h2>Zeitplan</h2>
+        <h2>ZEITPLAN</h2>
         <p>
             <strong>Ab 9 Uhr:</strong> Startnummernausgabe, Marktplatz<br>
-            <strong>10 Uhr:</strong> Auftakt mit Musik, Marktplatz<br>
-            <strong>10.30 Uhr:</strong> Es kann losgehen: Wettkampf B, Start Schwimmen: Waldbad<br>
-            <strong>13 Uhr:</strong> Zielschluss<br>
-            <strong>15 Uhr:</strong> Siegerehrung mit Musik, Bühne vor dem Waldbad. Es legt auf: DJ Yankee<br>
+            <strong>10 Uhr:</strong> Auftakt mit Musik, Marktplatz (Es spielen die Traininger Spatzen.)<br>
+            <strong>10.30 Uhr:</strong> Es kann losgehen: Wettkämpfe C und D<br>
+            Start Schwimmen: Waldbad<br>
             <strong>Wichtiger Hinweis:</strong> Es wird jeweils blockweise gestartet. Teilnehmende erfahren am Vorabend des Wettbewerbs unter www.waldtriathlon-trainingen.de ihre präzise Startzeit. Empfohlen wird, 20 Minuten früher vor Ort zu sein.
+        </p>
+        <p>
+            <strong>13 Uhr:</strong> Es kann losgehen: Wettkampf B<br>
+            Start Schwimmen: Waldbad<br>
+            <strong>15 Uhr:</strong> Es kann losgehen: Wettkampf A<br>
+            Start Schwimmen: Waldbad<br>
+            <strong>Wichtiger Hinweis:</strong> Es wird jeweils blockweise gestartet. Teilnehmende erfahren am Vorabend des Wettbewerbs unter www.waldtriathlon-trainingen.de ihre präzise Startzeit. Empfohlen wird, 20 Minuten früher vor Ort zu sein.
+        </p>
+        <p>
+            <strong>13 Uhr:</strong> Zielschluss<br>
+            <strong>15 Uhr:</strong> Siegerehrung mit Musik, Bühne vor dem Waldbad. Es legt auf: DJ Yankee
         </p>
     </section>
     <section id="mehr-info">
@@ -87,6 +128,42 @@
             <label for="message">Nachricht:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
             <button type="submit">Absenden</button>
+        </form>
+    </section>
+    <section id="wettkampfordnung">
+        <h2>WETTKAMPFORDNUNG</h2>
+        <p>
+            § 1 Grundlage und Einordnung<br>
+            1.1 Die vorliegende SpO wurde vom Präsidium der DTU am 14.01.2024 genehmigt.<br>
+            1.2 Die SpO ist eine weitere Ordnung im Sinne des § 4 Abs. 2 der Satzung der DTU.<br>
+            1.3 Die DTU hat die SpO für die wettkampfmäßige Ausübung der DTU-Sportarten in Deutschland dergestalt beschlossen, dass sie mit den zwingenden Normen des Regelwerks der World Triathlon (WT) und der Europäischen Triathlon Union (ETU) übereinstimmt und dennoch deutschlandspezifische Gegebenheiten und Erfordernisse berücksichtigt.<br>
+            1.4 In Fällen, in denen die SpO keine Regelung trifft, sind bei Deutschen Meisterschaften, Qualifikationswettkämpfen für internationale Meisterschaften sowie für die Wettkämpfe der Triathlon-Bundesliga (1. und die 2. Bundesligen) und Regionalligen ergänzend die Regeln der World Triathlon heranzuziehen.<br>
+            1.5 Teilnehmer an Wettkämpfen gemäß § 2.2 dürfen nur mit entsprechenden gesundheitlichen Voraussetzungen an den Start gehen. Die Verantwortung hierfür trägt jeder Teilnehmer selbst.
+        </p>
+        <button id="moreInfoButton">Mehr Info</button>
+    </section>
+    <section id="kontakt">
+        <h2>KONTAKT</h2>
+        <p>
+            SV Trainingen e. V.<br>
+            Übungsstraße 1<br>
+            98765 Trainingen<br>
+            Vertretungsberechtigter Vorstand: Ulrike Maschter<br>
+            Tel: 01234/5678-11<br>
+            Amtsgericht Lörrach, VR 1001
+        </p>
+        <form>
+            <label for="name">NAME*</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-MAIL*</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">IHRE NACHRICHT</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="captcha">SPAMSCHUTZ: WIEVIEL IST FÜNF MINUS FÜNF?* (BITTE ZAHL EINGEBEN)</label>
+            <input type="text" id="captcha" name="captcha" required>
+            <label for="privacy">Datenschutz</label>
+            <input type="checkbox" id="privacy" name="privacy" required> Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden.
+            <button type="submit">JETZT KONTAKT AUFNEHMEN</button>
         </form>
     </section>
     <footer>
